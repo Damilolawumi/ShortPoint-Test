@@ -13,11 +13,15 @@ function Notes(props) {
         setShowEditForm(false);
     }
     return (
-        <div>
-            {props.notes.map(note => {
-                return <div className='note'>
+        <div className='notes-Container'>
+            {props.notes.map((note, index) => {
+                return <div className='note' style={{
+                    borderLeft: `4px solid ${note.color}`,
+                }}>
                     <div className='header'>
-                        <p className='title'>Note 5</p>
+                        <p className='title' style={{
+                            color:note.color
+                        }}>Note {props.notes.length - index}</p>
                         <div className='buttonArea'>
                             <button className='fa fa-pencil' onClick={() => { setShowEditForm(true); setNoteToBeEdited(note) }}></button>
                             <button onClick={() => { props.delete(note.id) }} className='fa fa-trash'></button>
