@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .App-logo {
@@ -35,4 +36,104 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.form{
+  max-width: 310px;
+  margin: auto;
+  text-align: left;
+}
+
+.label{
+  font-size: 9px;
+  color: #CACACA;
+  text-align: left;
+}
+:focus{
+  outline: none !important;
+}
+.input{
+  width: 100%;
+  box-sizing: border-box;
+  background: #F8F8F8;
+  
+  border: 1px solid #cacaca;
+  box-shadow: 1px 1px 4px 0px #cacacaa3;
+  height: 27px;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-size: 11px;
+  color: black;
+  border-radius: 2px;
+}
+
+.button{
+  background: #33BCF6;
+  color: white;
+  font-size: 8px;
+  width: 79px;
+  height: 26px;
+  border-radius: 5px;
+  border: 2px solid;
+  margin-top: 10px;
+}
+
+.btn-div{
+  text-align: center;
+}
+
+/* Note styles */
+
+.note{
+  max-width: 200px;
+  height: 100px;
+  background-color: rgb(243,243,243);
+  text-align: left;
+  /* overflow: scroll; */
+ 
+  padding-top:5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+}
+
+.note .title{
+  font-size: 12px;
+  margin: 0;
+}
+
+.note .text{
+  color: #6a6a6a;
+  margin-top: 10px;
+  font-size: 10px;margin: 0;
+  padding-left: 6px;
+  padding-right: 6px;
+  flex:1;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.note .header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-left: 6px;
+  padding-right: 6px;
+
+}
+
+.note button{
+
+}
+
+.note .date{
+  font-size: 9px;
+  color: #cacaca;
+  margin: 0;
+  border-top: 1px solid #fff;
+  padding-top: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
 }

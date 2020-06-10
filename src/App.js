@@ -1,24 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Form from './Components/Form';
+
 import './App.css';
+import Notes from './Components/Notes';
 
 function App() {
+  const [notesList, setNoteContent] = useState([
+    {color:'red', text:'Lorem Ipsumssds d shds ds dsd', id:2, date:3232324}
+  ]);
+
+  // created a function to push a newNote into notesList
+  const addNote = (newNote) => {
+    let notes = [...notesList];
+    notes.push(newNote)
+    setNoteContent(notes)
+  }
+
+  const deleteNote = (id) => {
+    let filteredNotes = notesList.filter(note => {
+      return note.id !== id
+    })
+    setNoteContent(filteredNotes)
+  }
+
+  const editNote = (id, updatedNote) => {
+      let noteIndex = notesList.findIndex(note => note.id === id);
+
+      let notes = [...notesList];
+      notes[noteIndex] = updatedNote;
+
+      setNoteContent(notes)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* passed addnote and noteList as props to the form component and Notes component */}
+      <Form add={addNote} />
+      <Notes notes={notesList} delete={deleteNote} editNote={editNote} />
     </div>
   );
 }
