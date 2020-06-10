@@ -4,7 +4,7 @@ import { v4 as uuid} from 'uuid';
 function Form(props) {
 
     const [noteText, setNoteText] = useState('');
-    const [noteColor, setNoteColor] = useState('red');
+    const [noteColor, setNoteColor] = useState('#20D3CF');
 
     const onInputChange = (event) => {
         setNoteText(event.target.value)
@@ -29,7 +29,7 @@ function Form(props) {
                     <option value="#D183DB">Purple</option>
                     <option value="#9CDB83">Green</option>
                     <option value="#F26969">Red</option>
-                    <option value="#37AAE1">Teal</option>
+                    <option value="#37AAE1">Blue</option>
                     <option value="#FF9A7F">Orange</option>
 
                 </select>
