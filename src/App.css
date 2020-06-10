@@ -97,6 +97,8 @@
   flex-direction: column;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 .note .title{
@@ -105,7 +107,7 @@
 }
 
 .note .text{
-  color: #6a6a6a;
+  color: #909090;
   margin-top: 10px;
   font-size: 10px;margin: 0;
   padding-left: 6px;
@@ -113,6 +115,7 @@
   flex:1;
   padding-bottom: 4px;
   border-bottom: 1px solid #d9d9d9;
+  overflow: auto;
 }
 .note .header{
   display: flex;
@@ -125,15 +128,43 @@
 }
 
 .note button{
-
+  margin-left: 2px;
+  /* width: 10px; */
+  /* height: 10px; */
+  background: #fdfdfd;
+  border: 1px solid #cacaca96;
+  border-radius: 3px;
+  color: #cacaca;
+  font-size: 11px;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
 
 .note .date{
   font-size: 9px;
-  color: #cacaca;
+  color: #909090;
   margin: 0;
   border-top: 1px solid #fff;
   padding-top: 4px;
   padding-left: 6px;
   padding-right: 6px;
+}
+
+.note .buttonArea{
+  display: none;
+}
+
+.note:hover .buttonArea{
+  display: block;
+ 
+}
+.notes-Container{
+  max-width: 645px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  margin: auto;
+  margin-top: 30px;
 }
