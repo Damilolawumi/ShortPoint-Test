@@ -121,6 +121,7 @@
   justify-content: space-between;
   margin-bottom: 10px;
   margin-right: 10px;
+  box-shadow: 1px 1px 4px 0px #cacacaa3;
 }
 
 .note .title {
