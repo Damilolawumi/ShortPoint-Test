@@ -6,15 +6,7 @@ import Notes from './Components/Notes';
 
 function App() {
   
-  const [notesList, setNoteContent] = useState([
-    {color:'red', text:'Lorem Ipsumsssdsd sd s dsumsssd sd s dsumsssd d', id:2, date:3232324},
-    {color:'red', text:'Lorem Ipsumsssdsd sd s dsumsssd sd s dsumsssd d', id:2, date:3232324},
-    {color:'red', text:'Lorem Ipsumsssdsd sd s dsumsssd sd s dsumsssd d', id:2, date:3232324},
-    {color:'red', text:'Lorem Ipsumsssdsd sd s dsumsssd sd s dsumsssd d', id:2, date:3232324},
-    {color:'red', text:'Lorem Ipsumsssdsd sd s dsumsssd sd s dsumsssd d', id:2, date:3232324},
-    {color:'red', text:'Lorem Ipsumsssdsd sd s dsumsssd sd s dsumsssd d', id:2, date:3232324},
-   
-  ]);
+  const [notesList, setNoteContent] = useState([]);
 
   // created a function to push a newNote into notesList
   const addNote = (newNote) => {
