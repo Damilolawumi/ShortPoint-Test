@@ -25,12 +25,12 @@ function Form(props) {
             <label className='label'>Note Color</label>
             <div>
                 <select className='input' value={noteColor} onChange={onColorChange}>
-                    <option value="red">Red</option>
-                    <option value="orange">Orange</option>
-                    <option value="blue">Blue</option>
-                    <option value="purple">Purple</option>
-                    <option value="teal">Teal</option>
-                    <option value="green">Green</option>
+                    <option value="#20D3CF">Teal</option>
+                    <option value="#D183DB">Purple</option>
+                    <option value="#9CDB83">Green</option>
+                    <option value="#F26969">Red</option>
+                    <option value="#37AAE1">Teal</option>
+                    <option value="#FF9A7F">Orange</option>
 
                 </select>
             </div>
