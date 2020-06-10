@@ -98,6 +98,7 @@
   border-radius: 5px;
   border: 2px solid;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .btn-div{
@@ -189,4 +190,29 @@
   /* justify-content: space-between; */
   margin: auto;
   margin-top: 30px;
+}
+
+
+
+/* Scrollbar styles */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  margin-right: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cacaca;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
