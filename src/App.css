@@ -1,13 +1,12 @@
 .App {
   text-align: center;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -39,46 +38,46 @@
   }
 }
 
-.form{
+.form {
   max-width: 310px;
   margin: auto;
   text-align: left;
 }
-.edit-form{
+.edit-form {
   background: white;
-    padding: 20px;
-    opacity: 1;
-    margin-top: 30px;
-    border-radius: 10px;
+  padding: 20px;
+  opacity: 1;
+  margin-top: 30px;
+  border-radius: 10px;
 }
 
-.edit-form .header{
+.edit-form .header {
   margin: 0;
-    font-size: 14px;
+  font-size: 14px;
 }
-.modal{
-  background-color:#0000007a;
-  position:fixed;
-  width:100%;
-  height:100%;
-  top:0px;
-  left:0px;
-  z-index:1000;
+.modal {
+  background-color: #0000007a;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
 }
 
-.label{
+.label {
   font-size: 9px;
-  color: #CACACA;
+  color: #cacaca;
   text-align: left;
 }
-:focus{
+:focus {
   outline: none !important;
 }
-.input{
+.input {
   width: 100%;
   box-sizing: border-box;
-  background: #F8F8F8;
-  
+  background: #f8f8f8;
+
   border: 1px solid #cacaca;
   box-shadow: 1px 1px 4px 0px #cacacaa3;
   height: 27px;
@@ -89,8 +88,8 @@
   border-radius: 2px;
 }
 
-.button{
-  background: #33BCF6;
+.button {
+  background: #33bcf6;
   color: white;
   font-size: 8px;
   width: 79px;
@@ -101,20 +100,20 @@
   cursor: pointer;
 }
 
-.btn-div{
+.btn-div {
   text-align: center;
 }
 
 /* Note styles */
 
-.note{
+.note {
   width: 200px;
   height: 100px;
-  background-color: rgb(243,243,243);
+  background-color: rgb(243, 243, 243);
   text-align: left;
   /* overflow: scroll; */
- 
-  padding-top:5px;
+
+  padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 5px;
   flex-direction: column;
@@ -124,33 +123,33 @@
   margin-right: 10px;
 }
 
-.note .title{
+.note .title {
   font-size: 12px;
   margin: 0;
 }
 
-.note .text{
+.note .text {
   color: #909090;
   margin-top: 10px;
-  font-size: 10px;margin: 0;
+  font-size: 10px;
+  margin: 0;
   padding-left: 6px;
   padding-right: 6px;
-  flex:1;
+  flex: 1;
   padding-bottom: 4px;
   border-bottom: 1px solid #d9d9d9;
   overflow: auto;
 }
-.note .header{
+.note .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
   padding-left: 6px;
   padding-right: 6px;
-
 }
 
-.note button{
+.note button {
   margin-left: 2px;
   /* width: 10px; */
   /* height: 10px; */
@@ -165,7 +164,7 @@
   cursor: pointer;
 }
 
-.note .date{
+.note .date {
   font-size: 9px;
   color: #909090;
   margin: 0;
@@ -175,15 +174,14 @@
   padding-right: 6px;
 }
 
-.note .buttonArea{
+.note .buttonArea {
   display: none;
 }
 
-.note:hover .buttonArea{
+.note:hover .buttonArea {
   display: block;
- 
 }
-.notes-Container{
+.notes-Container {
   max-width: 645px;
   display: flex;
   flex-wrap: wrap;
@@ -191,8 +189,6 @@
   margin: auto;
   margin-top: 30px;
 }
-
-
 
 /* Scrollbar styles */
 
@@ -215,4 +211,20 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .note .buttonArea {
+    display: block;
+  }
+}
+
+@media (max-width: 426px) {
+  .note {
+    width: 100%;
+  }
 }
