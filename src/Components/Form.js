@@ -19,7 +19,7 @@ function Form(props) {
         <div className='form'>
             <label className='label'>Note Text</label>
             <div>
-                <input className='input' type='text' placeholder='text' onChange={onInputChange} value={noteText} />
+                <input className='input' type='text' placeholder='Enter Note' onChange={onInputChange} value={noteText} />
             </div>
 
             <label className='label'>Note Color</label>
@@ -37,6 +37,7 @@ function Form(props) {
             
             <div className='btn-div'>
             <button className='button' onClick={() => {
+                if(!noteText) return
                 let note = {
                     id:uuid(),
                     text:noteText,
